@@ -1,0 +1,46 @@
+<div id="providerlist">
+    <h2>empty</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <?php $provider = $this->getData('provider'); ?>
+        <?php foreach ($provider as $elem): ?>
+            <tr>
+                <td><?php echo $elem ?></td>
+            </tr>
+        <?php endforeach; ?>
+        <tr>
+            <td>there is no provider in this list</td>
+        </tr>
+    </table>
+
+
+    <h2>10 elements</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <?php $this->addContacts(10); ?>
+        <?php $provider = $this->getData('provider'); ?>
+        <?php foreach ($provider as $elem): ?>
+            <tr>
+                <td><?php echo $elem ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+
+    <h2>20 elements</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+        </tr>
+        <?php $this->addContacts(10); ?>
+        <?php $provider = $this->getData('provider'); ?>
+        <?php foreach ($provider as $elem): ?>
+            <tr>
+                <td><?php echo $elem ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+</div>
