@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Elogic_Provider" title="Providers" module="Elogic_Provider" sortOrder="20" dependsOnModule="Elogic_Provider" resource="Elogic_Provider::provider"/>
+        <add id="Elogic_Provider::index" title="Providers" module="Elogic_Provider" action="provider/test/index" parent="Elogic_Provider" sortOrder="20" dependsOnModule="Elogic_Provider" resource="Elogic_Provider::provider"/>
+    </menu>
+</config>
